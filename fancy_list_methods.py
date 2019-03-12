@@ -11,5 +11,4 @@ list.sort() #sorts! alphabetically
 
 list.join(' ') #same as JS
 
-
 print(list)
