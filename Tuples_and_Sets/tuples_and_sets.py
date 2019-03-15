@@ -3,6 +3,8 @@ tuple1 = (1, 2, 3, 4) # its a list with parenthesis, and it's IMMUTABLE!!!!
 tuple1[0] # 1
 tuple1[3] # 4
 
+tuple2 = (1,) #if it's just 1 value it needs a comma afterwards
+
 #can be used as keys in dictionaries
 # iterating is the same
 
