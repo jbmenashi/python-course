@@ -12,3 +12,12 @@ set1 = set({1, 2, 3, 4, 5})
 # iterating is the same
 
 #good way to remove duplicates
+
+set1.add(6) # if the element is already there, you can't add anything
+set1.remove(6)
+# or
+set1.discard(6) # if the element wasn't there at all, this won't throw an error
+
+set2 = set1.copy()
+set2.clear()
+
