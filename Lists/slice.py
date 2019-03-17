@@ -8,4 +8,4 @@ list[1:3] # you can have a start and end index
 
 list[::2] # theres a third arg, its a step, it skips them
 
-list[4::-1] # so this would count down from the end - it's a fancy reverse()
+list[::-1] # so this would count down from the end - it's a fancy reverse()
