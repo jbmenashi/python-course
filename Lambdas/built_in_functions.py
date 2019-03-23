@@ -23,3 +23,16 @@ min([4, 5, 6]) # 4
 
 names = ["Bob", "Tim", "Jonesy"]
 max(len(name) for name in names) # Jonesy - its a generator, not a list comp, but same idea
+
+reversed([1, 2, 3, 4]) #reverses it, but just use the cool slide method
+
+"".join(list(reversed("hello"))) #olleh
+
+abs(-3) #duh
+
+
+sum([1, 2, 3]) # adds them up! Helpful
+sum([1, 2, 3], 10) # the second arg is a start, so this would be 16
+
+round(10.1234) # 10
+round(10.1234, 2) # 10.12, the second arg is the digits you want

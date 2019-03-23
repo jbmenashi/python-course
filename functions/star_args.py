@@ -13,6 +13,10 @@ def check_names(*args):
 # because it creates a tuple, if you put a list in as your arg, it won't separate out every value
 # so just put a star in front
 
+
+def sum_even_values(*args):
+    return sum(arg for arg in args if arg % 2 == 0)
+
 nums = (1, 2, 3, 4, 5, 6)
 sum_all_nums(*nums)
 
