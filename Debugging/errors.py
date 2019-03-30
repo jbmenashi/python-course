@@ -13,3 +13,5 @@ def colorize(text, color):
 colorize([], "cyan") #Type Error
 colorize("hello", "blue") # Value Error
 colorize("hello", "cyan") # works
+
+import pdb; pdb.set_trace() # the debugger

@@ -17,7 +17,7 @@ finally:
    print("This will run no matter what")
 
 
-def divide(a, b)
+def divide(a, b):
    try:
       result = a / b 
    except ZeroDivisionError:
