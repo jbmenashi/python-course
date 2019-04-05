@@ -10,10 +10,13 @@ dict(first_zip) # {1: 4, 2: 5, 3: 6}
 midterms = [80, 78, 94]
 finals = [90, 77, 91]
 students = ["bob", "tim", "jasper"]
-
 # how do we get {"bob": 90, "tim": 78, "jasper": 94}
 
+
+
 {group[0]: max(group[1], group[2]) for group in zip(students, midterms, finals)}
+
+
 
 dict(zip(students, map(lambda pair: max(pair), zip(midterms, finals))))
 
