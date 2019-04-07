@@ -1,8 +1,7 @@
 class Chicken:
    total_eggs = 0 #class variable
 
-   def __init__(self, species, name):
-      self.species = species
+   def __init__(self, name):
       self.name = name
       self.eggs = 0 #instance attribute
 
@@ -12,10 +11,8 @@ class Chicken:
       return self.eggs
 
    @classmethod
-   def display_total_eggs(cls): # stands for class
-      return cls.total_eggs # because of the class method decorator, the self is now the class
+   def display_total_eggs(cls):
+      return cls.total_eggs
 
-   @classmethod
-   def from_string(cls, str):   
-      name,species = str.split(",")
-      return cls(name, species)
+
+
