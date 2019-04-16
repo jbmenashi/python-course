@@ -48,4 +48,4 @@ d.shuffle()
 # print(card)
 
 d.deal_hand(51)
-print(d.cards[0])
+# print(d.cards[0])
