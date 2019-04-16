@@ -9,18 +9,18 @@ class Animal:
    def make_sound(self, sound):
       print(f"this animal says {sound}")
 
-class Cat(Animal):
+class Dog(Animal):
    def __init__(self, name, breed):
-      super().__init__(name, species="cat")
+      super().__init__(name, species="dog")
       self.breed = breed 
 
    def make_sound(self): #method overwriting
-      return "Meow"
+      return "Woof"
 
 
-whiskers = Cat("Whiskers", "Tabby")
+whiskers = Dog("Scout", "Beagle")
 print(whiskers)
 print(whiskers.make_sound())
 print(whiskers.__dict__)
-print(Cat.__mro__) # MRO is method resolution order, the order in which python looks for stuff - it's how you
+print(Dog.__mro__) # MRO is method resolution order, the order in which python looks for stuff - it's how you
 #can do multiple inheritance

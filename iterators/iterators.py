@@ -9,7 +9,7 @@ next(it_name) # "O"
 next(it_name) # "B"
 
 
-def my_for_loop(iterable):
+def for_loop(iterable):
    iterator = iter(iterable)
    while True:
       try:
@@ -19,4 +19,4 @@ def my_for_loop(iterable):
 
 
 
-my_for_loop("hello")
+for_loop("hello")
