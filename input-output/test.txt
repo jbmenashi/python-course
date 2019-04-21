@@ -1,1 +1,4 @@
 This is a file with some text
+
+If you make changes to the file, you don't have to open it again
+
