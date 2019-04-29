@@ -22,13 +22,12 @@ html = """
 """
 
 soup = BeautifulSoup(html, "html.parser")
+data = soup.body.contents #gets you everything inside the body, as a list
+newdata = soup.body.contents[1].next_sibling.next_sibling
+
+# soup.find(class_="super-special").parent
+
+sib = soup.select("[data-example]")[1].find_previous_sibling()
 
 
-d = soup.select("[data-example]")
-e = soup.find(id="first")
-f = soup.find_all(class_="special") # or soup.select(".special")
-g = soup.find_all(attrs={ "data-example": "yes"})
-print(soup)
-print(d)
-print(e)
-print(g)
+print(sib)
